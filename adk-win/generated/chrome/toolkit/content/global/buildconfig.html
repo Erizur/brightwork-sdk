@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src chrome:; object-src 'none'" />
+    <meta charset="UTF-8">
+    <meta name="color-scheme" content="light dark">
+    <meta name="viewport" content="width=device-width; user-scalable=false;">
+    <title>Build Configuration</title>
+    <link rel="stylesheet" href="chrome://global/skin/in-content/info-pages.css" type="text/css">
+    <link rel="stylesheet" href="chrome://global/content/buildconfig.css" type="text/css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Build Configuration</h1>
+      <p>Please be aware that this page doesn't reflect all the options used to build Marble.</p>
+      <h2>Build platform</h2>
+      <table class="build-platform-table">
+        <tbody>
+          <tr>
+            <th>target</th>
+          </tr>
+          <tr>
+            <td>x86_64-pc-mingw32</td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Build tools</h2>
+      <table>
+        <tbody>
+          <tr>
+            <th>Compiler</th>
+            <th>Version</th>
+            <th>Compiler flags</th>
+          </tr>
+          <tr>
+            <td>/home/erizur/Downloads/marble/flake/mozbuild-win/clang/bin/clang-cl -fms-compatibility-version=19.39 -Xclang -ivfsoverlay -Xclang /home/erizur/Downloads/marble/flake/mozbuild-win/vs/overlay.yaml</td>
+            <td>19.1.7</td>
+            <td>-Gy -Zc:inline -Gw -D_HAS_EXCEPTIONS=0</td>
+          </tr>
+          <tr>
+            <td>/home/erizur/Downloads/marble/flake/mozbuild-win/clang/bin/clang-cl -fms-compatibility-version=19.39 -std:c++17 -Xclang -ivfsoverlay -Xclang /home/erizur/Downloads/marble/flake/mozbuild-win/vs/overlay.yaml</td>
+            <td>19.1.7</td>
+            <td>-Zc:sizedDealloc- -Gy -Zc:inline -Gw -D_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING -TP -GR- -D_HAS_EXCEPTIONS=0 -Z7 -O2 -Oy</td>
+          </tr>
+          <tr>
+            <td>/home/erizur/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/bin/rustc</td>
+            <td>1.96.0</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Configure options</h2>
+      <p>CONFIG_SHELL=/nix/store/rlq03x4cwf8zn73hxaxnx0zn5q9kifls-bash-5.3p3/bin/bash --target=x86_64-pc-mingw32 MOZILLA_OFFICIAL=1 MOZBUILD_STATE_PATH=/home/erizur/Downloads/marble/flake/mozbuild-win --disable-tests --enable-bootstrap --with-redist --disable-updater --enable-official-branding MOZ_WINDOWS_RS_DIR=/nix/store/z71l8l1n5jjwwbc9wv9vwiavv2syb7pd-source/windows-0.58.0</p>
+    </div>
+  </body>
+</html>

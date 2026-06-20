@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src chrome:; object-src 'none'" />
+    <meta charset="UTF-8">
+    <meta name="color-scheme" content="light dark">
+    <meta name="viewport" content="width=device-width; user-scalable=false;">
+    <title>Build Configuration</title>
+    <link rel="stylesheet" href="chrome://global/skin/in-content/info-pages.css" type="text/css">
+    <link rel="stylesheet" href="chrome://global/content/buildconfig.css" type="text/css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Build Configuration</h1>
+      <p>Please be aware that this page doesn't reflect all the options used to build Marble.</p>
+      <h2>Build platform</h2>
+      <table class="build-platform-table">
+        <tbody>
+          <tr>
+            <th>target</th>
+          </tr>
+          <tr>
+            <td>x86_64-pc-linux-gnu</td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Build tools</h2>
+      <table>
+        <tbody>
+          <tr>
+            <th>Compiler</th>
+            <th>Version</th>
+            <th>Compiler flags</th>
+          </tr>
+          <tr>
+            <td>/nix/store/h8rf3hxmmzazaag0jsqa95xaqvf9iv9j-clang-wrapper-21.1.2/bin/clang</td>
+            <td>21.1.2</td>
+            <td>-pthread -ffunction-sections -fdata-sections -fno-math-errno -fPIC</td>
+          </tr>
+          <tr>
+            <td>/nix/store/h8rf3hxmmzazaag0jsqa95xaqvf9iv9j-clang-wrapper-21.1.2/bin/clang++</td>
+            <td>21.1.2</td>
+            <td>-fno-rtti -pthread -fno-sized-deallocation -fno-aligned-new -ffunction-sections -fdata-sections -fno-math-errno -fno-exceptions -fPIC -gdwarf-4 -O2 -fomit-frame-pointer -funwind-tables</td>
+          </tr>
+          <tr>
+            <td>/nix/store/4sj19dch0zhnhhdsbrz9pxz55bc2xhb9-rustc-wrapper-1.91.1/bin/rustc</td>
+            <td>1.91.1</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Configure options</h2>
+      <p>CONFIG_SHELL=/nix/store/rlq03x4cwf8zn73hxaxnx0zn5q9kifls-bash-5.3p3/bin/bash --target=x86_64-pc-linux-gnu MOZILLA_OFFICIAL=1 MOZBUILD_STATE_PATH=/home/erizur/Downloads/marble/flake/mozbuild --disable-tests CC=clang LD=ld CXX=clang++ HOST_CC=/nix/store/sqlnjj8c3n3si3sjnadhdbcwgrk97g2w-clang-wrapper-21.1.2/bin/cc HOST_CXX=/nix/store/sqlnjj8c3n3si3sjnadhdbcwgrk97g2w-clang-wrapper-21.1.2/bin/c++ AR=ar NM=nm PKG_CONFIG=pkg-config READELF=readelf OBJCOPY=objcopy --enable-alsa --enable-jack --with-libclang-path=/nix/store/kl4w4f8bb77faahsdv40gjmfzg2d081d-clang-21.1.2-lib/lib --with-system-ffi --with-system-icu --with-system-webp --with-system-libvpx --with-system-jpeg --with-system-png --with-wasi-sysroot=/nix/store/06b2kwxa0pvhc2zpzivbiswzkvyvjm1v-wasi-sysroot WASM_CC=/nix/store/mxn0xv34csr05i4a0rcvvk88pqgkb65g-wasm32-unknown-wasi-clang-wrapper-21.1.2/bin/wasm32-unknown-wasi-cc WASM_CXX=/nix/store/mxn0xv34csr05i4a0rcvvk88pqgkb65g-wasm32-unknown-wasi-clang-wrapper-21.1.2/bin/wasm32-unknown-wasi-c++ --with-system-nss --disable-updater --enable-official-branding --with-system-libevent --enable-system-pixman STRIP=strip --with-system-zlib</p>
+    </div>
+  </body>
+</html>

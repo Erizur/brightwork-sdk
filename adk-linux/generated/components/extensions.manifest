@@ -1,0 +1,5 @@
+category update-timer addonManager @mozilla.org/addons/integration;1,getService,addon-background-update-timer,extensions.update.interval,86400
+category addon-provider-module BrightworkProvider resource://gre/modules/addons/BrightworkProvider.sys.mjs
+category addon-provider-module GMPProvider resource://gre/modules/addons/GMPProvider.sys.mjs
+category addon-provider-module ModelHubProvider resource://gre/modules/addons/ModelHubProvider.sys.mjs
+category addon-provider-module SitePermsAddonProvider resource://gre/modules/addons/SitePermsAddonProvider.sys.mjs
