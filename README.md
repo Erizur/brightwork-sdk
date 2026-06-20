@@ -2,13 +2,13 @@
 This is the basic template for developing a Brightwork addon for Marble.
 Update this if needed!
 
-# Installation instructions
+## Installation instructions
 - On the add-ons manager, go to the brightwork section and install the package after building it or downloading it.
 - You can do this by using the cog icon on the top and pressing the Brightwork-related options.
 - If nothing failed, activate it and restart your browser!
 - enjoi.
 
-# Building the omni.ja
+## Building the omni.ja
 You need atleast **Python 3.12** installed on your system.
 To build the addon, run the following command:
 ```python
